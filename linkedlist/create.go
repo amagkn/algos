@@ -1,12 +1,13 @@
 package linkedlist
 
-func Create(length int) *ListNode {
+func Create(values []int) *ListNode {
 	dummy := &ListNode{}
 
 	curr := dummy
-	for i := 0; i < length; i++ {
+
+	for _, v := range values {
 		curr.Next = &ListNode{
-			Val: i + 1,
+			Val: v,
 		}
 		curr = curr.Next
 	}
