@@ -1,13 +1,13 @@
 package linkedlist
 
 /*
-PalindromeLinkedList
+IsPalindrome
 
 Можно  полностью перевернуть список и сравнить перевернутый список с оригиналом, но это не совсем оптимально.
 Лучше сравнить перевернутую вторую "половину" листа с первой половиной (не перевернутой), для этого придется искать середину списка.
 */
 
-func PalindromeLinkedList(head *ListNode) bool {
+func IsPalindrome(head *ListNode) bool {
 	// Ищем середину листа, это будет первый узел во второй половине листа
 	secondHalfBeginNode := GetMiddleNode(head)
 	// Переворачиваем вторую часть листа
@@ -28,7 +28,7 @@ func PalindromeLinkedList(head *ListNode) bool {
 	return true
 }
 
-func PalindromeLinkedListMySolution(head *ListNode) bool {
+func IsPalindromeMySolution(head *ListNode) bool {
 	// Ищем середину
 	slow := head
 	fast := head

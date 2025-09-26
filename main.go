@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	head := linkedlist.Create([]int{1, 2, 3, 3, 2, 1})
+	head := linkedlist.Create([]int{1, 2, 3, 4})
 
-	fmt.Println(linkedlist.PalindromeLinkedList(head))
+	fmt.Println(linkedlist.ToSlice(linkedlist.Reorder(head)))
 }
