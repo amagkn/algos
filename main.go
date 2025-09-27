@@ -7,8 +7,11 @@ import (
 )
 
 func main() {
-	l1 := linkedlist.Create([]int{1, 3, 3, 5})
-	l2 := linkedlist.Create([]int{2, 4, 6, 6, 7, 8, 10})
+	lists := []*linkedlist.ListNode{
+		linkedlist.Create([]int{1, 5, 10}),
+		linkedlist.Create([]int{2, 7, 12}),
+		linkedlist.Create([]int{4, 6, 22}),
+	}
 
-	fmt.Println(linkedlist.ToSlice(linkedlist.MergeTwoSortedLists(l1, l2))) // [1 2 3 3 4 5 6 6 7 8 10]
+	fmt.Println(linkedlist.ToSlice(linkedlist.MergeKSortedLists(lists))) // [1,2,4,5,6,7,10,12,22]
 }
