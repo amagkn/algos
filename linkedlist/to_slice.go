@@ -1,7 +1,7 @@
 package linkedlist
 
-func ToSlice(head *ListNode) []any {
-	var res []any
+func ToSlice(head *ListNode) []int {
+	var res []int
 
 	curr := head
 	for curr != nil {
