@@ -7,5 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println(arrays.MovesZeros([]int{1, 2, 0, 1, 0, 1, 0, 3, 0, 1}))
+	numArray := arrays.NewNumArray([]int{-2, 0, 3, -5, 2, -1})
+
+	fmt.Println(numArray.RangeSumQuery(0, 2)) // 1
+	fmt.Println(numArray.RangeSumQuery(2, 5)) // -1
+	fmt.Println(numArray.RangeSumQuery(0, 5)) // -3
 }
