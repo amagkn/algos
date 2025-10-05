@@ -17,7 +17,9 @@ func NewNumArray(nums []int) NumArray {
 /*
 RangeSumQuery
 
-Нужно решать с помощью префиксного массива
+# Нужно решать с помощью префиксного массива
+
+https://leetcode.com/problems/range-sum-query-immutable/
 */
 func (n *NumArray) RangeSumQuery(left int, right int) int {
 	return n.prefix[right+1] - n.prefix[left]
