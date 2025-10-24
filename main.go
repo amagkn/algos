@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(strings.DigitalRoot(942))
+	fmt.Println(strings.CountWords("go go run"))
 }
